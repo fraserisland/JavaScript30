@@ -16,30 +16,51 @@
       p.style.color = '#BADA55';
       p.style.fontSize = '50px';
     }
+let name ='fraser'
 
     // Regular
+    console.log('hello')
 
     // Interpolated
+    console.log(`hello i am ${name}`)
 
     // Styled
+    console.log('%c I am some great text', 'font-size: 50px; backgruond:red;')
 
     // warning!
+    console.warn('woah woah')
 
     // Error :|
+    console.error('shiz')
 
     // Info
-
+    console.info('crocs eat 3-4 ppl per year')
     // Testing
+    console.assert( 1 === 2, 'you did not select the right element.')
 
     // clearing
-
+    console.clear()
     // Viewing DOM Elements
+    console.log(p)
+    console.dir(p)
 
     // Grouping together
-
+    dogs.forEach(dog => {
+      console.group('${dog.name}')
+      console.log(`this is ${dog.name}`);
+      console.log(`his age is ${dog.age}`)
+      console.groupEnd(`${dog.name}`)
+    })
     // counting
+    console.count('wes')
+    console.count('wes')
+    console.count('wes')
+    console.count('wes')
+    console.count('wes')
+    console.count('wes')
 
     // timing
+    console.time('fetching data')
 
   </script>
 </body>
